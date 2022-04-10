@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import Task
 
+#Serializer for task, adding username 
 class TaskSerializer(serializers.ModelSerializer):
     my_user_data = serializers.SerializerMethodField(read_only=True)
 

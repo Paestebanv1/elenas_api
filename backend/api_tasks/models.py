@@ -4,6 +4,7 @@ from django.db.models import Q
 
 User = settings.AUTH_USER_MODEL
 
+# Class to verify if the task is public and find a string into the description
 class TaskQuerySet(models.QuerySet):
     def is_public(self):
         return self.filter(public=True)
