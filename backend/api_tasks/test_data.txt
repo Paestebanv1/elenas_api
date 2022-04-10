@@ -1,0 +1,8 @@
+import datetime
+
+Task.objects.create(title = 'task1', date_start = datetime(2015, 10, 9, 23, 55, 59, 342380), date_end = datetime(2015, 11, 9, 23, 55, 59, 342380), location = 'casa', owner = 1234, description = 'task1')
+
+Task.objects.create(title = 'task2', date_start = datetime(2015, 10, 9, 23, 55, 59, 342380), date_end = datetime(2015, 11, 9, 23, 55, 59, 342380), location = 'casa', owner = 1235, description = 'task2')
+
+
+
